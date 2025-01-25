@@ -100,9 +100,8 @@ SELECT DATE(lpep_pickup_datetime), MAX(trip_distance)
 FROM public.green_taxi_trips
 GROUP BY DATE(lpep_pickup_datetime)
 ORDER BY MAX(trip_distance) DESC;
-2019-10-31, 515.89
 ```
-
+Answer: 2019-10-31, 515.89
 # Question 5
 ```
 SELECT l."Zone", SUM(g."total_amount")
