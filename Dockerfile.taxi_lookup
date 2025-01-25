@@ -1,0 +1,10 @@
+FROM python:3.9
+
+RUN apt-get update && apt-get install -y curl
+
+RUN pip install pandas sqlalchemy psycopg2
+
+WORKDIR /app
+COPY ingest_taxi_lookup.py ingest_taxi_lookup.py
+
+ENTRYPOINT [ "python", "ingest_taxi_lookup.py" ]
