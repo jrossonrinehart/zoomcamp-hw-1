@@ -137,3 +137,7 @@ ORDER BY g."tip_amount" DESC;
 ```
 
 Answer: JFK Airport
+
+# Question 7
+
+terraform init, terraform apply -auto-approve, terraform destroy
